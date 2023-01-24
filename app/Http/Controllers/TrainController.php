@@ -9,8 +9,21 @@ class TrainController extends Controller
 {
     function index()
     {
-        $trains = Train::all();
+        $trains = Train::where("departure_date", "LIKE", "2023-01-24%")
+
+            ->get();
+
         return view('index', compact("trains"));
 
     }
 }
+
+
+ 
+/* function index()
+    {
+        $table = "ambacabanane";
+        Train::getSchemaBuilder()->getColumnListing($table);
+            return view('index', compact("trains"));
+
+    }  */

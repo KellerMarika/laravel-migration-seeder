@@ -1,1 +1,21 @@
-@import '~bootstrap/scss/bootstrap'
+//VARIABLES (bootstrap)
+$primary_color: rgb(138, 202, 255);
+$secondary_color: rgb(65, 114, 219);
+$success_color: rgb(131, 245, 175);
+$info_color: rgb(153, 72, 146);
+$warning_color: rgb(255, 55, 98);
+$danger_color: rgb(2, 189, 101);
+$light_color: rgb(252, 250, 249);
+$dark_color: rgb(239, 233, 248);
+
+@use "bootstrap/scss/bootstrap" with (
+  $primary: $primary_color,
+  $secondary: $secondary_color,
+  $success: $success_color,
+  $info: $info_color,
+  $warning: $warning_color,
+  $danger: $danger_color,
+  $light: $light_color,
+  $dark: $dark_color,
+
+);
